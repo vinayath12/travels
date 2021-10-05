@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<style>
+ body{
+      background-image:url('ima2.jpg');
+
+      }
+  form{
+      width:300px;
+      height:300px;
+      position:absolute;
+      top:90px;
+      left:500px;
+      background-color:lavender;
+      border:2px solid white;
+      border-radius:50px;
+      text-align:center;
+    }
+    #g{
+       position:relative;
+       top:60px;
+       }
+    input{
+            margin:18px;
+       padding:4px;
+       border:none;
+       border-radius:50px;
+        }
+</style>
+<body >
+<form action="login" method="post">
+    {% csrf_token %}
+  <div id="g">
+   <input type="text" name="username" placeholder="username">
+   <input type="text" name="password" placeholder="password">
+   <input type="submit" >
+  </div>
+</form>
+</body>
+</html>
